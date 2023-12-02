@@ -1,5 +1,7 @@
-import { createElement } from '../../script/layout'
-import { createHeader } from '../../script/layout'
+import {
+  createElement,
+  createHeader,
+} from '../../script/layout'
 
 const page = document.querySelector('.page')
 

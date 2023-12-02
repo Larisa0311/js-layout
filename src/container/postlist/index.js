@@ -1,5 +1,7 @@
-import { createElement } from '../../script/layout'
-import { createHeader } from '../../script/layout'
+import {
+  createElement,
+  createHeader,
+} from '../../script/layout'
 
 const page = document.querySelector('.page')
 
@@ -8,6 +10,8 @@ page.append(header)
 
 const title = createElement('h1', 'title', 'Мій блог')
 page.append(title)
+
+//=======
 
 const POST_LIST = [
   {
@@ -40,6 +44,8 @@ const createPost = () => {
 
     const postHeader = createElement('div', 'post__header')
 
+    //===
+
     const categoryList = createElement(
       'div',
       'post__category--list',
@@ -54,12 +60,16 @@ const createPost = () => {
       categoryList.append(categorySpan)
     })
 
+    //===
+
     const dateSpan = createElement(
       'span',
       'post__date',
       postData.date,
     )
     postHeader.append(categoryList, dateSpan)
+
+    //===
 
     const infoParagraph = createElement(
       'p',
@@ -72,8 +82,12 @@ const createPost = () => {
     postList.append(post)
   })
 
+  //===
+
   return postList
 }
+
+//====
 
 const post = createPost()
 page.append(post)

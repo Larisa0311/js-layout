@@ -16,12 +16,12 @@ const HEADER_BUTTON_LIST = [
   {
     width: 24,
     height: 24,
-    src: '/svg/arrow-back.svg',
+    src: '/svg/header__back.svg',
   },
   {
     width: 24,
     height: 24,
-    src: '/img/IMG_4737 1.png',
+    src: '/img/header__avatar.png',
   },
 ]
 
